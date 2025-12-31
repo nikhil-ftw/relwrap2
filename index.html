@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.2.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Kai Qing &amp; Me — Relationship Wrapped&lt;/title&gt;
+
+&lt;style&gt;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.slide {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.45);
+  z-index: -1;
+  transition: background-image 1s ease;
+}
+
+/* CARD */
+.card {
+  background: rgba(0,0,0,0.45);
+  padding: 28px;
+  border-radius: 20px;
+  max-width: 520px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.slide.active .card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1 { font-size: 2.8rem; font-weight: 900; }
+h2 { font-size: 2.1rem; margin-bottom: 10px; }
+p { font-size: 1.15rem; line-height: 1.45; }
+
+.stat {
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin: 12px 0;
+}
+
+.fire {
+  font-size: 4rem;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+video {
+  width: 90%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 0 40px rgba(255,120,200,0.45);
+}
+
+.small {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* NEXT BUTTON */
+.next {
+  position: absolute;
+  bottom: 30px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* LAST SLIDE LAYOUT */
+.last {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-side {
+  margin-top: 20px;
+}
+
+.photo-side img {
+  width: 220px;
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(255,120,200,0.6);
+}
+
+/* REPLAY BUTTON */
+.replay {
+  margin-top: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: white;
+  color: black;
+  font-weight: 700;
+  border: none;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&quot;container&quot; id=&quot;container&quot;&gt;
+
+&lt;!-- 1 --&gt;
+&lt;section class=&quot;slide&quot;&gt;&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h1&gt;Your Relationship Wrapped 💖&lt;/h1&gt;
+    &lt;p&gt;Starring Kai Qing.&lt;br&gt;Produced by love &amp; FaceTime.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;next&quot;&gt;Swipe ↓&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 2 --&gt;
+&lt;section class=&quot;slide&quot;&gt;&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;fire&quot;&gt;🔥&lt;/div&gt;
+    &lt;h2&gt;FaceTime Streak&lt;/h2&gt;
+    &lt;div class=&quot;stat&quot;&gt;360 Days&lt;/div&gt;
+    &lt;p&gt;Longest streak without getting bored.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;next&quot;&gt;Next ↓&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 3 --&gt;
+&lt;section class=&quot;slide&quot;&gt;&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h2&gt;Your Top Memories 📸&lt;/h2&gt;
+    &lt;p&gt;26 photos.&lt;/p&gt;
+    &lt;p&gt;0 bad ones.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;next&quot;&gt;Next ↓&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 4 --&gt;
+&lt;section class=&quot;slide&quot;&gt;&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h2&gt;Most Replayed Moment 🏆&lt;/h2&gt;
+    &lt;video src=&quot;video.mp4&quot; autoplay muted loop playsinline&gt;&lt;/video&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;next&quot;&gt;Next ↓&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 5 --&gt;
+&lt;section class=&quot;slide&quot;&gt;&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h2&gt;Fake But Accurate Stats&lt;/h2&gt;
+    &lt;p&gt;💬 Messages sent: 48,392&lt;/p&gt;
+    &lt;p&gt;😴 Fell asleep on call: 67×&lt;/p&gt;
+    &lt;p&gt;💀 Arguments won: You&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;next&quot;&gt;Next ↓&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 6 --&gt;
+&lt;section class=&quot;slide&quot;&gt;&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h2&gt;Top Moments 🎵&lt;/h2&gt;
+    &lt;p&gt;Late-night calls&lt;/p&gt;
+    &lt;p&gt;Laughing at nothing&lt;/p&gt;
+    &lt;p&gt;Every normal day&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;next&quot;&gt;Next ↓&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 7 --&gt;
+&lt;section class=&quot;slide&quot;&gt;&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h2&gt;Dear Kai Qing 💌&lt;/h2&gt;
+    &lt;p&gt;
+      If this year was a playlist, you were every song.
+      I’d choose you again. Always.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;next&quot;&gt;Final ↓&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 8 FINAL --&gt;
+&lt;section class=&quot;slide last&quot; id=&quot;finalSlide&quot;&gt;&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h2&gt;Thanks for listening to “Us.”&lt;/h2&gt;
+    &lt;p class=&quot;small&quot;&gt;No skips. Ever.&lt;/p&gt;
+    &lt;button class=&quot;replay&quot; onclick=&quot;replay()&quot;&gt;Replay Wrapped 🔁&lt;/button&gt;
+    &lt;div class=&quot;photo-side&quot;&gt;
+      &lt;img src=&quot;img27.jpg&quot; alt=&quot;Us ❤️&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+/* SNAP ACTIVE */
+const slides = document.querySelectorAll(&quot;.slide&quot;);
+const observer = new IntersectionObserver(entries =&gt; {
+  entries.forEach(entry =&gt; {
+    if (entry.isIntersecting) entry.target.classList.add(&quot;active&quot;);
+  });
+}, { threshold: 0.6 });
+slides.forEach(s =&gt; observer.observe(s));
+
+/* BACKGROUND ROTATION */
+const bgs = document.querySelectorAll(&quot;.bg&quot;);
+let imgIndex = 1;
+setInterval(() =&gt; {
+  bgs.forEach(bg =&gt; bg.style.backgroundImage = `url(img${imgIndex}.jpg)`);
+  imgIndex = imgIndex &lt; 26 ? imgIndex + 1 : 1;
+}, 2300);
+
+/* CONFETTI */
+let launched = false;
+observer.observe(document.getElementById(&quot;finalSlide&quot;));
+function launchConfetti() {
+  for (let i = 0; i &lt; 120; i++) {
+    const c = document.createElement(&quot;div&quot;);
+    c.className = &quot;confetti&quot;;
+    c.style.left = Math.random() * 100 + &quot;vw&quot;;
+    c.style.background = `hsl(${Math.random()*360},100%,70%)`;
+    document.body.appendChild(c);
+    setTimeout(() =&gt; c.remove(), 4000);
+  }
+}
+const finalObserver = new IntersectionObserver(e=&gt;{
+  if(e[0].isIntersecting &amp;&amp; !launched){launched=true;launchConfetti();}
+},{threshold:0.6});
+finalObserver.observe(document.getElementById(&quot;finalSlide&quot;));
+
+/* REPLAY */
+function replay() {
+  document.getElementById(&quot;container&quot;).scrollTo({ top: 0, behavior: &quot;smooth&quot; });
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
